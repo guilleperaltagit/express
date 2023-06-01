@@ -13,12 +13,12 @@ server.get("/", (req, res) => {
 
 //Define la ruta texto. Responde un texto plano
 server.get("/text", (req, res) => {
-    res.send("texto plano")
+    res.status(200).send("texto plano")
 })
 
 //Define la ruta cursos. Responde un json
 server.get("/cursos", (req, res) => {
-    res.send([
+    res.status(200).send([
         {
             "nombre": "HTML",
             "Duración": "3"
