@@ -11,6 +11,11 @@ server.get("/", (req, res) => {
     res.send("<h1>BIENVENIDOS A EXPRESS</h1>")
 })
 
+//Define la ruta texto. Responde un texto plano
+server.get("/text", (req, res) => {
+    res.send("texto plano")
+})
+
 //Define la ruta cursos. Responde un json
 server.get("/cursos", (req, res) => {
     res.send([
